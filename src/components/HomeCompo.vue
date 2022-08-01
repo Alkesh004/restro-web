@@ -3,9 +3,9 @@
 </template>
 
 <script>
+
 export default {
     name: "HomeCompo",
-
      mounted() {
         let user = localStorage.getItem('user-info');
         if (!user) {
@@ -15,6 +15,5 @@ export default {
         }
     },
 }
-
 
 </script>

@@ -1,8 +1,8 @@
 <template>
 <img class="logo" src="../assets/restro-logo.png" />
-<h2>Login Page</h2>
+<h2>Login</h2>
 
-<div class="register">
+<div class="login">
 
     <input type="email" v-model="email" placeholder="Enter Email" />
     <input type="password" v-model="password" placeholder="Enter Password" />
@@ -15,6 +15,15 @@
 
 <script>
 export default {
-    name: 'LoginCompo'
+    name: 'LoginCompo',
+    mounted() {
+        let user = localStorage.getItem('user-info');
+        if (user) {
+            this.$router.push({
+                name: 'HomeCompo'
+            })
+        }
+    }
 }
+
 </script>
