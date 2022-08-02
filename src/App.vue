@@ -1,6 +1,6 @@
 <template>
 <!-- <SignUp/> -->
-<router-view/>
+<router-view />
 </template>
 
 <script>
@@ -21,14 +21,25 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav{background-color: #f2940026; overflow: hidden;}
+.nav a{text-decoration: none; padding: 10px 14px; float: left; margin-left: 5px; color:#8a151b; font-weight: 400; }
+.nav a:hover{background-color: #f29400; color: #ffffff;}
+
+/* #8a151b */
 .logo {
     width: 150px;
 }
 
-.register input, .login input {
+.register input,
+.login input {
     width: 300px;
     height: 40px;
     padding-left: 20px;
@@ -37,7 +48,8 @@ export default {
     border: 1px solid #c7c7c7;
 }
 
-.register button, .login button {
+.register button,
+.login button {
     width: 320px;
     height: 40px;
     border: 1px solid #f29400;
