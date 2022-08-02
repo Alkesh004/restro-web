@@ -1,16 +1,24 @@
 <template>
 <div>
     <div class="nav">
-    <a href="home">Home</a>
-    <a href="home">Add Restaurant</a>
-    <a href="home">Update Restaurent</a>
-    <a href="home">Logout</a>
+        <router-link to="/">Home</router-link>
+        <router-link to="add">Add Restaurant</router-link>
+        <router-link to="update">Update Restaurent</router-link>
+        <a v-on:click="logout">Logout</a>
     </div>
 </div>
 </template>
 
 <script>
 export default {
-    name: 'HeaderCompo'
+    name: 'HeaderCompo',
+
+    methods: {
+        logout() {
+            localStorage.clear();
+            this.$router.push({name:'LoginCompo'})
+        }
+    },
+
 }
 </script>

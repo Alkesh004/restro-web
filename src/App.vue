@@ -30,7 +30,7 @@ body {
 }
 
 .nav{background-color: #f2940026; overflow: hidden;}
-.nav a{text-decoration: none; padding: 10px 14px; float: left; margin-left: 5px; color:#8a151b; font-weight: 400; }
+.nav a{text-decoration: none; padding: 10px 14px; float: left; margin-left: 5px; color:#8a151b; font-weight: 400; cursor: pointer;}
 .nav a:hover{background-color: #f29400; color: #ffffff;}
 
 /* #8a151b */
